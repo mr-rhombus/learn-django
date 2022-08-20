@@ -1,0 +1,34 @@
+/* classes start with a . */
+.firstDiv{
+    color: blue;
+}
+
+.secondDiv{
+    color: red;
+}
+
+#singledout{
+    color: green;
+    text-decoration: line-through;
+}
+
+/* '*' applies to everything on the page. It overrides classes but not ids! */
+/* *{
+    color: black;
+} */
+
+/* Adjacent siblings: select all ul next to h3 elements */
+h3 + ul{
+    border: 4px dotted purple;
+}
+
+/* Descendents: select all anchor tags inside a list */
+li a{
+    color: red;
+}
+
+/* Attributes: select a particular 'descendent' */
+li a[href='www.npr.org']{
+    color: blue;
+    border: 5px solid orange;
+}
