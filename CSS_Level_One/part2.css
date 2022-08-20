@@ -1,0 +1,20 @@
+body{
+    background: url(https://www.surfertoday.com/images/stories/beach-quotes.jpg);
+    background-repeat: no-repeat;
+}
+
+div{
+    background-color: blue;
+    border-color: orange;
+    border-width: 10px;
+    border-style: dotted;
+}
+
+p{
+    color: yellow;
+}
+
+span{
+    background-color: red;
+    color: black;
+}
