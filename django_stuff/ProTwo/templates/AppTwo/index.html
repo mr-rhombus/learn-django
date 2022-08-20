@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppTwo</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  
+  <h1>Hello, this is the index.html for AppTwo!</h1>
+  <!-- {{ insert_me }}  template tag! -->
+
+  <h2>Check out /users to see a list of users</h2>
+
+  <h2>Here are your access records:</h2>
+  <div class="djangtwo">
+    {% if access_records %}
+      <table>
+        <thead>
+          <th>Site Name</th>
+          <th>Date Accessed</th>
+        </thead>
+
+        {% for rec in access_records %}
+        <tr>
+          <td>{{ rec.name }}</td>
+          <td>{{ rec.date }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p>NO ACCESS RECORDS FOUND!</p>
+    {% endif %}
+    
+  </div>
+
+</body>
+</html>
