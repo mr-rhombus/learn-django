@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+  background-color:darkslategray;
+  border-top: 0px;
+  border-right: 30px solid turquoise;
+  border-left: 30px solid turquoise;
+  border-bottom: 30px solid turquoise;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+#submit{
+  background-color: rgb(199, 178, 59);
+  border-radius: 10px;
+  padding: 20px 10px;
+}

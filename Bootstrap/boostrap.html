@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+
+  <div class="container">
+    <h1>Bootstrap!</h1>
+    <!-- BUTTONS -->
+    <h1>Hello World!</h1>
+    <button class="btn btn-success btn-lg" disabled="disabled">Disabled</button>
+    <button class="btn btn-success btn-lg">I am on</button>
+    
+    <!-- JUMBOTRON -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- FORMS -->
+    <div>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <br>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>  
+    </div>
+    <br>
+
+    <!-- NAVBARS -->
+    <nav class="navbar navbar-default fixed-top bg-light">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Company</a>
+        </div>
+  
+        <ul class="nav navbar-nav">
+          <li><a href="#">Item One</a></li>
+          <li><a href="#">Item Two</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">On the Left</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- GRIDS -->
+    <style>
+      .boxy{
+        background: #b3bdff;
+        border: 2px solid black;
+      }
+    </style>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 boxy">COL Large 4</div>
+        <div class="col-lg-4 boxy">COL Large 4</div>
+        <div class="col-lg-4 boxy">COL Large 4</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 boxy">COL Med 6</div>
+        <div class="col-md-6 boxy">COL Med 6</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 boxy">COL SM 6</div>
+        <div class="col-sm-6 boxy">COL SM 6</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 boxy">ONE</div>
+        <div class="col-lg-3 col-sm-6 boxy">TWO</div>
+        <div class="col-lg-3 col-sm-6 boxy">THREE</div>
+        <div class="col-lg-3 col-sm-6 boxy">FOUR</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 boxy">
+        <div class="row">
+          <div class="col-lg-6 boxy">NEST ONE</div>
+          <div class="col-lg-6 boxy">NEST TWO</div>
+        </div>
+      </div>
+      <div class="col-lg-6 boxy">TOP LEVEL</div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>

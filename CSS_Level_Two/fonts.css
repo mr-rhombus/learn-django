@@ -1,0 +1,24 @@
+h1{
+    font-family:"Arial";
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;}
+
+/* 1em = 16px, or "default" body font size of parent element (body here) */
+body{
+    font-size: 20px
+}
+
+#two{
+    font-size: 2em;
+}
+
+p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
