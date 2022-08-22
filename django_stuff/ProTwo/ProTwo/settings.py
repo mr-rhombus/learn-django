@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AppTwo',
     'django_seed',
+    'signup.apps.SignupConfig'
 ]
 
 MIDDLEWARE = [
