@@ -2,5 +2,5 @@ from django.db import models
 
 # Create your models here.
 class NewUser(models.Model):
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     password = models.CharField(max_length=100)
