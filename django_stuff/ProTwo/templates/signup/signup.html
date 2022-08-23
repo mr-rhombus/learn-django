@@ -9,13 +9,9 @@
   <title>Signup Page</title>
 </head>
 <body>
-  <h1>Enter login credentials!</h1>
   <div class="container">
-    <form method="POST">
-      {{ form.as_p }}
-      {% csrf_token %}
-      <input type="submit" class="btn btn-primary" value="Submit">
-    </form>
+    {% load crispy_forms_tags %}
+    {% crispy form %}
   </div>
 </body>
 </html>
