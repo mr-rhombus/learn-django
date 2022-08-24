@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 {% extends 'basic_app/base.html' %}
+{% load my_extras %}
   {% block body %}
     <h1>Welcome to index!</h1>
     <h2>This page also extends from base.html!</h2>
+    {% comment %} update vals with built in filters {% endcomment %}
+    <h3>Uppercase: {{ text|upper }}</h3>
+    <h3>Cut "world": {{ text|cut_new:'world' }}</h3>
+    {{ number|add:'15' }}
   {% endblock body %}
