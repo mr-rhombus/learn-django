@@ -7,6 +7,13 @@
   <title>Document</title>
 </head>
 <body>
+  
   <h1>Welcome to relative_url_templates</h1>
+  <a href="{% url 'basic_app:other' %}">Navigate to other</a>
+  <br>
+  <a href="{% url 'basic_app:index' %}">Navigate to home page</a>
+  <br>
+  <a href="{% url 'admin:index' %}">Navigate to admin page</a>
+  
 </body>
 </html>
