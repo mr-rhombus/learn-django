@@ -1,0 +1,15 @@
+{% extends 'basic_app/base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block body_block %}
+    {% if registered %}
+        <h1>Thank you for registering!</h1>
+    {% else %}
+        <h1>Please register here:</h1>
+        <form action="" method="post">
+            {% crispy user_form %}
+            {% crispy profile_form %}
+        </form>
+    {% endif %}
+{% endblock body_block %}
