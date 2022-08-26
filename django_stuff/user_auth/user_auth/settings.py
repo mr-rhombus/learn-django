@@ -91,11 +91,10 @@ DATABASES = {
 
 # Tiered layers of pwd hashing security as failsafes. If hasher 1 doesn't work, try hasher 2, then 3, ...
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.Argon2PasswordHasher'
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher'
-    'django.contrib.auth.hashers.BCryptPasswordHasher'
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher'
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
