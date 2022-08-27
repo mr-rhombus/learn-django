@@ -1,5 +1,5 @@
 {% extends 'basic_app/base.html' %}
-{% load staticfiles %}
+{% comment %} {% load staticfiles %} {% endcomment %}
 {% load crispy_forms_tags %}
 
 {% block body_block %}
@@ -8,7 +8,7 @@
     {% else %}
         <h1>Please register here:</h1>
         <form action="" method="post">
-            {% crispy user_form %}
+            {% comment %} {% crispy user_form %} {% endcomment %}
             {% crispy profile_form %}
         </form>
     {% endif %}
