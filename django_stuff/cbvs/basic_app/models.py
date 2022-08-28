@@ -1,5 +1,5 @@
-from tkinter import CASCADE
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class School(models.Model):
@@ -9,6 +9,10 @@ class School(models.Model):
 
     def __str__(self):
         return self.name
+
+    # Define redirect url after creating new school in school_form view
+    def get_absolute_url(self):
+        return reverse("basic_app:school_detail", kwargs={"pk": self.pk})
 
 
 class Student(models.Model):
