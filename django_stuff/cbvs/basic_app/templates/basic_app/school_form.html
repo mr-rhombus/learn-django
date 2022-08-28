@@ -1,0 +1,22 @@
+{% extends 'basic_app/basic_app_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block header %}Modify Schools{% endblock header %}
+
+{% block body_block %}
+
+    {% if not form.instance.pk %}
+        <h4>Enter new school information</h4>
+    {% else %}
+        <h4>Update school information</h4>
+    {% endif %}
+    
+    {% comment %} use crispy filter here since it allows submit button to show up on both create and update views {% endcomment %}
+    <form action="" method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <input class='btn btn-primary' type="submit" value="Submit">
+    </form>
+
+    {% comment %} {% crispy form %} {% endcomment %}
+
+{% endblock body_block %}
