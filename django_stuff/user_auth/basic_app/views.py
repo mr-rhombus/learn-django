@@ -30,7 +30,8 @@ def register(request):
             registered=True
         else:
             print('invalid')
-            print(user_form.errors, profile_form.errors)  # print out the errors for the form(s)
+            # print(user_form.errors, profile_form.errors)  # print out the errors for the form(s)
+            print(profile_form.errors)
     # HTTP request
     else:
         user_form = UserForm()
