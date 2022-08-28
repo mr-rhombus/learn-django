@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
-{% block body_block %}
 
-    {% comment %} Header {% endcomment %}
-    <header class='pb-3 mb-4 border-bottom'>
-        <span class='fs-4'>Simple Schools</span>
-    </header>
+{% comment %} Header {% endcomment %}
+{% block header %}
+    Simple Schools
+{% endblock header %}    
+
+{% block body_block %}
 
     {% comment %} Jumbotron {% endcomment %}
     <div class='p-5 mb-4 bg-light rounded-3'>
