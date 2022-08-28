@@ -11,4 +11,8 @@ urlpatterns = [
     # on school_list view, if we click a school we are linked to that school's detail view. Below, we define the primary key that aligns to the school, which is called from {{ school.id }} in school_list.html
     # path(r'school_detail/(?P<pk>\d+)/$', views.SchoolDetailView.as_view(), name='school_detail'),
     path('school_detail/<int:pk>', views.SchoolDetailView.as_view(), name='school_detail'),
+    # createview
+    path('create_school', views.SchoolCreateView.as_view(), name='create_school'),
+    # update view
+    path('school_detail/<int:pk>/update', views.SchoolUpdateView.as_view(), name='update'),
 ]
