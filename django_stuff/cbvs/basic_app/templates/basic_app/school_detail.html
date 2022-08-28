@@ -1,4 +1,7 @@
 {% extends 'basic_app/basic_app_base.html' %}
+
+{% block header %}{{school_detail.name}} details{% endblock header %}
+
 {% block body_block %}
 
     <div class='row align-items-md-stretch'>
@@ -10,8 +13,10 @@
             <h3>Students</h3>
             {% comment %} .students comes from the "related_name" defined in models.py, which links Student and School models together on school name {% endcomment %}
             {% for student in school_detail.students.all %}
-                <p>{{ student.name }} is {{ student.age }} years old</p>
+                <p class='fs-4'>{{ student.name }} is {{ student.age }} years old</p>
             {% endfor %}
+
+            <a class='btn btn-primary' href="{% url 'basic_app:update' pk=school_detail.pk %}">Update</a>
         </div>
     </div>
 
