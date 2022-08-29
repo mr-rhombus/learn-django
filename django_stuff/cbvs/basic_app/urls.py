@@ -15,4 +15,6 @@ urlpatterns = [
     path('create_school', views.SchoolCreateView.as_view(), name='create_school'),
     # update view
     path('school_detail/<int:pk>/update', views.SchoolUpdateView.as_view(), name='update'),
+    # delete view
+    path('school_detail/<int:pk>/delete', views.SchoolDeleteView.as_view(), name='delete'),
 ]
