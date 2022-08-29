@@ -1,0 +1,15 @@
+{% extends 'basic_app/basic_app_base.html' %}
+
+{% block header %}Delete a School{% endblock header %}
+
+{% block body_block %}
+
+    {% comment %} Use "school" instead of "school_detail" here bc this is the lowercase version of our model {% endcomment %}
+    <h1>Delete {{ school.name }}?</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" class='btn btn-primary' value="Confirm">
+        <a class='btn btn-outline-secondary' href="{% url 'basic_app:school_detail' pk=school.pk %}">Cancel</a>
+    </form>
+
+{% endblock body_block %}
