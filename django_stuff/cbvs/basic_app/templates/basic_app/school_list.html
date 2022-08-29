@@ -6,7 +6,7 @@
 
     <ol>
         {% for school in schools %}
-            <h2><li><a href="school_detail/{{ school.id }}">{{ school.name }}</a></li></h2>
+            <h2><li><a href="{% url 'basic_app:school_detail' pk=school.id %}">{{ school.name }}</a></li></h2>
         {% endfor %}
     </ol>
 
